@@ -3,10 +3,10 @@
 ## BEM-VINDO A ÁREA PARA TESTE DE PROGRAMAS NUCLEARES :bomb::boom: 
 Este repositório é destinado para o armazenamento de funções para utilição geral, isto é:
 
-*Facilitar Debugging;
-*Auxiliar na criação de arquivos e diretórios;
-*Agilizar ou aprimorar processos no interior de programas;
-*etc.
+* Facilitar Debugging;
+* Auxiliar na criação de arquivos e diretórios;
+* Agilizar ou aprimorar processos no interior de programas;
+* etc.
 
 ## FUNÇÕES
 
