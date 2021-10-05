@@ -1,0 +1,14 @@
+#!/bin/bash
+path=$1
+if [ -n "$path" ]; then
+cd "$path" || exit;
+else path=$(pwd)
+fi;
+echo "Type the repository link:"
+read -r repo
+if [ -n "$repo" ]; then 
+git init;
+git remote add origin "$repo";
+git pull origin master;
+else echo "ERROR Invalid repository at PATH $path";
+fi;
