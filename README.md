@@ -38,7 +38,7 @@ method (l methodi) FirstMethodfromTheCodeTheFi
 ## SHELL SCRIPTS
 
 ### NEW GO (NEWGO)
-A script newgo é um bash script feito para facilitar a criação de arquivos .go. Através de um único comando no terminal é possível criar um novo diretório e um novo arquivo Go de uma só vez. Para isso é necessário seguir os seguintes passos:
+O script newgo é um bash script feito para facilitar a criação de arquivos .go. Através de um único comando no terminal é possível criar um novo diretório e um novo arquivo Go de uma só vez. Para isso é necessário seguir os seguintes passos:
 
 1. Baixar o script e lhe-dar as permissões necessárias.
 ```bash
@@ -67,6 +67,28 @@ Ainda, caso não seja informado o nome do arquivo, ele irá criar um conjunto di
 joes@DNA-83203:~/plans$ newgo
 198402/198402.go
 ```
+
+### GIT HERE (GITH)
+O script gith é um bash script que facilita criação de repositórios locais. Com um único comando - e um link - encurta-se todo o processo de "init", "remote add", "pull" e afins. Para que o comando funcione de acordo com o planejado, siga os seguintes passos:
+
+1. Baixar o script e lhe-dar as permissões necessárias.
+```bash
+chmod +x gith
+```
+
+2. Copiar ou mover o script para dentro da pasta /usr/bin/ ou /usr/local/bin/
+```bash
+sudo cp gith /usr/local/bin/
+```
+ou
+```bash
+sudo mv gith /usr/bin/
+```
+3.  Com o comando script copiado (ou movido) chame-o e espere-o perguntar qual o link do repositório.
+```git
+Type the repository link: git@github.com:JVLAlves/PackageBottom.git
+```
+Ao realizar esses passos, o comando realiza o "init", "remote add" e "pull" automaticamente. 
 
 
 
