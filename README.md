@@ -32,7 +32,41 @@ func FirstFunctionFromTheCodeTwo
 func FirstFunctionFromTheCodeThree
 func FirstFunctionFromTheCodeFour
 func FirstFunctionFromTheCodeFive
-method (l methodi) FirstMethodfromTheCodeTheFif
+method (l methodi) FirstMethodfromTheCodeTheFi
 ```
+
+## SHELL SCRIPTS
+
+### NEW GO (NEWGO)
+A script newgo é um bash script feito para facilitar a criação de arquivos .go. Através de um único comando no terminal é possível criar um novo diretório e um novo arquivo Go de uma só vez. Para isso é necessário seguir os seguintes passos:
+
+1. Baixar o script e lhe-dar as permissões necessárias.
+```bash
+chmod +x newgo
+```
+
+2. Copiar ou mover o script para dentro da pasta /usr/bin/ ou /usr/local/bin/
+```bash
+sudo cp newgo /usr/local/bin/
+```
+ou
+```bash
+sudo mv newgo /usr/bin/
+```
+
+3. Com o comando script copiado (ou movido) chame-o, seguido do nome desejado para o arquivo
+```bash
+newgo exemple
+```
+Se desejar colocar esse novo conjunto dirétorio/arquivo dentro de outro diretório basta dizer o caminho:
+```bash
+newgo exempledir/exemple.go
+```
+Ainda, caso não seja informado o nome do arquivo, ele irá criar um conjunto diretório/arquivo com uma sequência de números aleatórios.
+```bash
+joes@DNA-83203:~/plans$ newgo
+198402/198402.go
+```
+
 
 
