@@ -10,8 +10,8 @@ Este repositório é destinado para o armazenamento de funções para utilição
 
 ## FUNÇÕES
 
-# FUNCTION PARSERER
-Este programa utiliza Expressões Regulares específicas para buscar funções e métodos em um código Go. Ũtil para Debugging e análise.
+### FUNCTION PARSERER
+Este programa utiliza Expressões Regulares específicas para buscar funções e métodos em um código Go. útil para Debugging e análise.
 
 Ao executar, dois campos input aparecerâo a vocë. A primeira diz respeito ao nome do diretório que contém o arquivo .go, por exemplo:
 ```go
