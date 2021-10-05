@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+path=$2
+if [ -n "$path" ]; then
+cd "$path" || exit;
+else path=$(pwd)/;
+fi;
+randomname=$1
+if [ -z "$randomname" ]; then
+randomname=$RANDOM;
+fi; 
+
+if [ -d "$randomname" ]; then
+rm -r $randomname;
+echo "Old $randomname/ Deleted :D"
+fi;
+mkdir "$randomname"/;
+echo "directory $randomname/ created";
+
+
+
+cd "$randomname"/ || exit;
+touch "$randomname".go;
+echo "New program created in directory $randomname/";
+
