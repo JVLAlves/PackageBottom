@@ -8,7 +8,6 @@ import (
 	"regexp"
 
 	functions "github.com/JVLAlves/DinamizeSnipeitDataQuest/Utilities/Functions"
-	path "github.com/JVLAlves/PackageBottom/PATH"
 )
 
 const (
@@ -25,28 +24,6 @@ func main() {
 
 	fmt.Print("Type the directory name: ")
 	fmt.Scan(&Location)
-	switch Location {
-
-	case "personal", "Personal", "PERSONAL":
-		Location = path.PERSONAL
-	case "forks", "Forks", "FORKS":
-		Location = path.FORK
-	case "dataquest", "Dataquest", "DataQuest", "DATAQUEST":
-		Location = path.DATAQUEST
-	case "datamission", "Datamission", "DataMission", "DATAMISSION":
-		Location = path.DATAMISSION
-	case "datacenter", "Datacenter", "DataCenter", "DATACENTER":
-		Location = path.DATACENTER
-	case "DinamizeEMKT-FeedBack", "Dinamizeemktfeedback", "DinamizeEmktFeedback", "DinamizeEmkt-Feedback", "Dinamizeemkt-feedback", "DINAMIZEEMKTFEEDBACK", "DINAMIZEEMKT-FEEDBACK":
-		Location = path.DINAMIZEEMKTFEEDBACK
-	case "Utilities", "utilities", "UTILITIES":
-		Location = path.UTILITIES
-	case "SnipeMethods", "Snipemethods", "SNIPEMETHODS":
-		Location = path.UTILITIES + "/" + "SnipeMethods"
-	case "Functions", "functions", "FUNCTIONS":
-		Location = path.UTILITIES + "/" + "Functions"
-	}
-
 	fmt.Println(Location)
 	fmt.Print("Type the file name: ")
 	fmt.Scanln(&File)
